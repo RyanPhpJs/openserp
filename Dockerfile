@@ -19,5 +19,5 @@ FROM zenika/alpine-chrome:with-chromedriver
 COPY --from=builder /app/openserp /usr/local/bin/openserp
 ADD config.yaml /usr/src/app
 
-CMD ["openserp", "serve", "--port", "7070"]
+CMD ["openserp", "serve"]
 
